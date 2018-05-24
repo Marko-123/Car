@@ -4,24 +4,33 @@ public class Main {
    
     public static void main(String[] args) {
         
-        Car myCar = new Car();
-        System.out.println("Maksimalna brzina je: " + myCar.maxSpeed);
-        System.out.println(myCar.condition);
-
-        System.out.println(myCar.currenPrice);
-        System.out.println(myCar.license);
-        System.out.println(myCar.minSpeed);
-        System.out.println(myCar.weight);
+//        Car myCar = new Car();
+//        myCar.printMainAttributes();
+//        
+        
         
         
         
         Car companyCar = new Car(150, 30, 2000, false, "EFG-456", 'B', 3500, 60000);
-        System.out.println("Maksimalna brzina je: " + companyCar.maxSpeed);
-        System.out.println(companyCar.condition);
-        System.out.println(companyCar.currenPrice);
-        System.out.println(companyCar.license);
-        System.out.println(companyCar.minSpeed);
-        System.out.println(companyCar.weight);
+        companyCar.changeModel("Fiat");
+        companyCar.ChangeMaxFuel(150);
+        companyCar.fuelUp();
+        
+        companyCar.changeConsumption(5);
+        
+        companyCar.printMainAttributes();
+        companyCar.travel(50);
+        companyCar.printMainAttributes();
+        
+        Car audi = new Car();
+        audi.changeModel("Audi");
+        audi.fuelUp();
+        
+        audi.changeConsumption(20);
+        
+        audi.printMainAttributes();
+        audi.travel(3);
+        audi.printMa
         
     }
     
