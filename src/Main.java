@@ -6,9 +6,21 @@ public class Main {
         
         Car myCar = new Car();
         System.out.println("Maksimalna brzina je: " + myCar.maxSpeed);
+        System.out.println(myCar.condition);
+        System.out.println(myCar.currenPrice);
+        System.out.println(myCar.license);
+        System.out.println(myCar.minSpeed);
+        System.out.println(myCar.weight);
+        
+        
         
         Car companyCar = new Car(150, 30, 2000, false, "EFG-456", 'B', 3500, 60000);
         System.out.println("Maksimalna brzina je: " + companyCar.maxSpeed);
+        System.out.println(companyCar.condition);
+        System.out.println(companyCar.currenPrice);
+        System.out.println(companyCar.license);
+        System.out.println(companyCar.minSpeed);
+        System.out.println(companyCar.weight);
         
     }
     
