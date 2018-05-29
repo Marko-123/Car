@@ -33,6 +33,13 @@ public class Main {
         audi.printMainAttributes();
         audi.travel(3);
         audi.printMainAttributes();
+        
+        audi.getIn();
+        audi.printMainAttributes();
+        audi.getIn();
+        audi.printMainAttributes();
+        audi.getIn();
+        audi.printMainAttributes();
     }
     
 }
