@@ -1,5 +1,8 @@
 
 import loops.Loops;
+import person.Person;
+import person.Student;
+import person.Teacher;
 
 public class Main {
 
@@ -50,20 +53,46 @@ public class Main {
 //        testAuto.printMainAttributes();
 //        testAuto.getOut(2);
 //        testAuto.printMainAttributes();
-
-
-
         //While loop
         //Loops testLoop = new Loops();
+//        Loops.testWhileLoop();
+//        Loops.testDoWhileLoop();
+//        Loops.testForLoop();
+//        
+//        Loops.testDubleForLoop();
+//        
+//        Loops.testMultiplicationTable();
+        
+
+
+        Person p1 = new Person();
+        p1.showData();
+        
+        
+        p1.setName("Marko");
+        p1.setSurName("Barlovic");
+        p1.setJmbg("6545646546");
+        
+        p1.showData();
+        
+        
+        
+        Person p2 = new Person("Marko", "Barlovic", "3216354687");
        
+        p2.showData();
         
-        Loops.testWhileLoop();
-        Loops.testDoWhileLoop();
-        Loops.testForLoop();
         
-        Loops.testDubleForLoop();
+        Student studentMarko = new Student("Marko", "Markovic", "46574856456");
+        studentMarko.setCurrentYear(5);
+        studentMarko.setIndexNumber("fsd-5646");
+        studentMarko.showData();
         
-        Loops.testMultiplicationTable();
+        Student studentMarija = new Student("Marija", "Maric", "6546546545", "inh-858 ", 3);
+        studentMarija.showData();
+//        
+        
+        Teacher teacherJovo = new Teacher("Jovo", "Jovic", "54654654654", "Oto", 25);
+        teacherJovo.showData();
 
     }
 }
